@@ -29,7 +29,6 @@ main {
     width: 60vw;
     height: 100vh;
     min-width: 23.25rem;
-    display: flex;
     flex: 1;
     justify-content: center;
     align-items: center;
@@ -39,15 +38,17 @@ main {
 
 .side-section > div.logo-container {
     background-color: rgba(0, 0, 0, 0.6);
-    font-size: 2rem;
+    font-size: 2.5rem;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    top: 250px;
 }
 
 .side-section img {
-    width: 5rem;
+    width: 7rem;
     padding: 0.625rem;
 }
 
@@ -68,9 +69,43 @@ main {
 }
 
 .content-section {
-    flex: 2;
+    background-color: rgb(250, 250, 250, 1);
     width: 60vw;
     height: 100vh;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
 
-    /* border: 0.1px solid red; */
+.content-section .header-section {
+    font-size: 1.6rem;
+    padding: 1.4rem;
+}
+
+.content-section .form-section {
+    background-color: white;
+    padding: 1.4rem;
+}
+
+.content-section .submit-section {
+    padding: 1.4rem;
+}
+
+.content-section .submit-section button {
+    background-color: rgb(89, 109, 72);
+    color: white;
+    border: none;
+    border-radius: 0.8rem;
+    font-size: 1.2rem;
+    font-family: "Norse Bold";
+    font-weight: 700;
+    padding: 0.8rem 1.6rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.255);
+}
+
+.content-section .submit-section a {
+    color: rgb(89, 109, 72);;
+    text-decoration: none;
 }
