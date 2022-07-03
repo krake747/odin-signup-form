@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 :root {
     font-size: 1em;
 }
@@ -8,7 +10,7 @@
 }
 
 html body {
-    font-family: "Norse Bold";
+    font-family: "Roboto", "sans-serif";
     padding: 0px;
     margin: 0px;
 }
@@ -17,6 +19,10 @@ main {
     display: flex;
     justify-content: center;
     width: 100vw;
+}
+
+button {
+    font-family: "Roboto", "sans-serif";
 }
 
 .side-section {
@@ -38,6 +44,7 @@ main {
 
 .side-section > div.logo-container {
     background-color: rgba(0, 0, 0, 0.6);
+    font-family: "Norse Bold";
     font-size: 2.5rem;
     width: 100%;
     display: flex;
@@ -99,7 +106,6 @@ main {
     border: none;
     border-radius: 0.8rem;
     font-size: 1.2rem;
-    font-family: "Norse Bold";
     font-weight: 700;
     padding: 0.8rem 1.6rem;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.255);
