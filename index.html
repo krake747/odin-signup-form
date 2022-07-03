@@ -41,6 +41,7 @@
                   name="firstName"
                   id="firstName"
                   placeholder="Thor"
+                  required
                 />
               </label>
               <label for="familyName"
@@ -50,13 +51,14 @@
                   name="familyName"
                   id="familyName"
                   placeholder="Odinson"
+                  required
                 />
               </label>
             </div>
             <div class="form-row">
               <label for="email"
                 >Email
-                <input type="email" name="email" id="email" />
+                <input type="email" name="email" id="email" required />
               </label>
 
               <label for="phoneNumber"
@@ -67,12 +69,17 @@
             <div class="form-row">
               <label for="password"
                 >Password
-                <input type="password" name="password" id="password" />
+                <input type="password" name="password" id="password" required />
               </label>
 
               <label for="confirmPw"
                 >Confirm Password
-                <input type="password" name="confirmPw" id="confirmPw" />
+                <input
+                  type="password"
+                  name="confirmPw"
+                  id="confirmPw"
+                  required
+                />
               </label>
             </div>
           </form>

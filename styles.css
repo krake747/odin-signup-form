@@ -95,6 +95,7 @@ button {
 .content-section .form-section {
     background-color: white;
     padding: 1.4rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.255);
 }
 
 .content-section h1 {
@@ -132,11 +133,25 @@ button {
     box-sizing: border-box;
 }
 
+.content-section input:focus {
+    border: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.255);
+    outline: none;
+}
+
+.content-section input:invalid:focus {
+    border: 2px solid rgb(255, 69, 100);
+}
+
+.content-section input:focus:valid {
+    border: 2px solid rgb(0, 102, 255) ;
+}
+
 .content-section .submit-section {
     padding: 1.4rem;
 }
 
-.content-section .submit-section button {
+.content-section .submit-section button[type="submit"] {
     background-color: rgb(89, 109, 72);
     color: white;
     border: none;
