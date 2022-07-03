@@ -1,0 +1,76 @@
+:root {
+    font-size: 1em;
+}
+
+@font-face {
+    font-family: "Norse Bold";
+    src: local("Norse Bold"), url(./fonts/Norse-Bold.otf) format("opentype");
+}
+
+html body {
+    font-family: "Norse Bold";
+    padding: 0px;
+    margin: 0px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.side-section {
+    background-image: url(./images/halie-west-sidebar-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    position: relative;
+    width: 60vw;
+    height: 100vh;
+    min-width: 23.25rem;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+
+    /* border: 0.1px solid green; */
+}
+
+.side-section > div.logo-container {
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.side-section img {
+    width: 5rem;
+    padding: 0.625rem;
+}
+
+.side-section p {
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 0.75rem;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 4px 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+.side-section a {
+    color: white;
+    text-decoration: underline;
+}
+
+.content-section {
+    flex: 2;
+    width: 60vw;
+    height: 100vh;
+
+    /* border: 0.1px solid red; */
+}
