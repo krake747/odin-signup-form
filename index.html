@@ -32,7 +32,8 @@
         </div>
         <div class="form-section">
           <h1>Let's do this!</h1>
-          <form id="sign-up-form" action="#" method="post">
+          <!-- <form id="sign-up-form" action="index.html" method="post"> -->
+          <form id="sign-up-form">
             <div class="form-row">
               <label for="firstName"
                 >First Name
@@ -71,21 +72,23 @@
                 >Password
                 <input type="password" name="password" id="password" required />
               </label>
-
-              <label for="confirmPw"
+              <label for="confirmPassword"
                 >Confirm Password
                 <input
                   type="password"
-                  name="confirmPw"
-                  id="confirmPw"
+                  name="confirmPassword"
+                  id="confirmPassword"
                   required
                 />
               </label>
             </div>
           </form>
+          <div class="error"></div>
         </div>
         <div class="submit-section">
-          <button type="submit">Create Account</button>
+          <button id="submit-form" form="sign-up-form" type="submit">
+            Create Account
+          </button>
           <p>Already have an account? <a href="#">Log in</a></p>
         </div>
       </div>

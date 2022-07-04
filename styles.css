@@ -166,3 +166,8 @@ button {
     color: rgb(89, 109, 72);
     text-decoration: none;
 }
+
+.password-invalid {
+    color: rgb(140, 10, 10);
+    font-weight: 700;
+}
